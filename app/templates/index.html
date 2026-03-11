@@ -13,10 +13,7 @@ a{color:var(--accent2);text-decoration:none}
 ::-webkit-scrollbar{width:6px;height:6px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
-
 .app{max-width:1440px;margin:0 auto;padding:24px 32px 48px}
-
-/* Header */
 .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:16px}
 .header-left{display:flex;align-items:center;gap:14px}
 .logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#7c6aef,#a78bfa,#60a5fa);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(124,106,239,.4);letter-spacing:-1px}
@@ -24,17 +21,11 @@ a{color:var(--accent2);text-decoration:none}
 .header h1 span{background:linear-gradient(135deg,var(--accent2),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .header-sub{color:var(--text2);font-size:.85rem;margin-top:2px}
 .header-right{display:flex;align-items:center;gap:12px}
-
-/* Version badge */
 .ver-badge{padding:4px 12px;border-radius:20px;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:.75rem;font-weight:500}
-
-/* Lang Toggle */
 .lang-toggle{display:flex;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
 .lang-btn{padding:7px 18px;border:none;background:transparent;color:var(--text2);cursor:pointer;font-size:.82rem;font-weight:600;transition:var(--tr)}
 .lang-btn.active{background:var(--accent);color:#fff}
 .lang-btn:hover:not(.active){color:var(--text);background:var(--bg4)}
-
-/* System Cards */
 .sys-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-bottom:28px}
 .sys-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;transition:var(--tr);position:relative;overflow:hidden}
 .sys-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:0;transition:var(--tr)}
@@ -44,14 +35,10 @@ a{color:var(--accent2);text-decoration:none}
 .sys-card .value{font-size:1.35rem;font-weight:700}
 .sys-card .sub{font-size:.78rem;color:var(--text2);margin-top:4px}
 .sys-card .icon{position:absolute;top:16px;right:18px;font-size:1.4rem;opacity:.5}
-
-/* Error Banner */
 .error-banner{background:var(--red-bg);border:1px solid rgba(248,113,113,.3);border-radius:var(--radius);padding:16px 20px;margin-bottom:20px;display:none;align-items:center;gap:12px}
 .error-banner.show{display:flex}
 .error-banner .err-icon{font-size:1.3rem}
 .error-banner .err-text{color:var(--red);font-size:.88rem}
-
-/* Toolbar */
 .toolbar{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
 .search-box{flex:1;min-width:240px;position:relative}
 .search-box input{width:100%;padding:10px 16px 10px 40px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-size:.9rem;outline:none;transition:var(--tr)}
@@ -62,8 +49,6 @@ a{color:var(--accent2);text-decoration:none}
 .fbtn:hover,.fbtn.active{border-color:var(--accent);color:var(--accent2);background:var(--bg3)}
 .stat-pill{padding:6px 14px;border-radius:20px;background:var(--bg3);color:var(--text2);font-size:.78rem;white-space:nowrap}
 .stat-pill b{color:var(--text);font-weight:600}
-
-/* Table */
 .table-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 table{width:100%;border-collapse:collapse}
 thead th{padding:12px 16px;text-align:left;font-size:.73rem;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;background:var(--bg3);border-bottom:1px solid var(--border);cursor:pointer;user-select:none;white-space:nowrap;transition:var(--tr)}
@@ -74,8 +59,6 @@ tbody tr{border-bottom:1px solid var(--border);transition:var(--tr);cursor:point
 tbody tr:last-child{border-bottom:none}
 tbody tr:hover{background:var(--bg3)}
 tbody td{padding:12px 16px;font-size:.88rem;white-space:nowrap}
-
-/* Badges */
 .badge{display:inline-block;padding:3px 10px;border-radius:6px;font-size:.75rem;font-weight:600;letter-spacing:.02em}
 .badge-perfect{background:var(--green-bg);color:var(--green)}
 .badge-good{background:var(--blue-bg);color:var(--blue)}
@@ -88,20 +71,14 @@ tbody td{padding:12px 16px;font-size:.88rem;white-space:nowrap}
 .cat-reasoning{background:var(--orange-bg);color:var(--orange)}
 .cat-multimodal{background:rgba(244,114,182,.12);color:var(--pink)}
 .cat-embedding{background:var(--yellow-bg);color:var(--yellow)}
-
-/* Score Bar */
 .score-cell{display:flex;align-items:center;gap:8px}
 .score-num{font-weight:700;font-size:.95rem;min-width:32px}
 .score-bar-bg{flex:1;height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;min-width:60px}
 .score-bar{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--green));transition:width .5s ease}
-
-/* Memory Bar */
 .mem-wrap{display:flex;align-items:center;gap:8px}
 .mem-bg{width:60px;height:6px;background:var(--bg4);border-radius:3px;overflow:hidden}
 .mem-bar{height:100%;border-radius:3px;transition:width .5s ease}
 .mem-low{background:var(--green)}.mem-mid{background:var(--yellow)}.mem-high{background:var(--orange)}.mem-full{background:var(--red)}
-
-/* Modal */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:var(--tr)}
 .modal-overlay.show{opacity:1;pointer-events:auto}
 .modal{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:32px;width:600px;max-width:92vw;max-height:85vh;overflow-y:auto;transform:translateY(20px) scale(.97);transition:var(--tr);box-shadow:0 20px 60px rgba(0,0,0,.5)}
@@ -121,23 +98,17 @@ tbody td{padding:12px 16px;font-size:.88rem;white-space:nowrap}
 .score-row .sr-bar{height:100%;border-radius:4px;transition:width .6s ease}
 .score-row .sr-val{width:36px;text-align:right;font-size:.82rem;font-weight:600}
 .note-item{padding:8px 12px;background:var(--bg3);border-radius:6px;font-size:.82rem;color:var(--text2);margin-bottom:6px;border-left:3px solid var(--accent)}
-
-/* Footer */
 .footer{text-align:center;padding:32px 0 0;color:var(--text2);font-size:.78rem}
 .footer a{color:var(--accent2)}
-
-/* Loading */
 .loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 0;gap:16px}
 .spinner{width:40px;height:40px;border:3px solid var(--bg4);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-text{color:var(--text2);font-size:.9rem}
-
 @media(max-width:768px){.app{padding:16px}.sys-grid{grid-template-columns:repeat(2,1fr)}.detail-grid{grid-template-columns:1fr}table{font-size:.8rem}thead th,tbody td{padding:8px 10px}}
 </style>
 </head>
 <body>
 <div class="app">
-  <!-- Header -->
   <div class="header">
     <div class="header-left">
       <div class="logo">N</div>
@@ -148,234 +119,350 @@ tbody td{padding:12px 16px;font-size:.88rem;white-space:nowrap}
     </div>
     <div class="header-right">
       <span class="ver-badge">v1.0.0</span>
-      <div class="lang-toggle">
-        <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">中文</button>
-        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      <div class="lang-toggle" id="langToggle">
+        <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+        <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
       </div>
     </div>
   </div>
-
-  <!-- Error Banner -->
-  <div class="error-banner" id="errorBanner">
-    <span class="err-icon">⚠️</span>
-    <span class="err-text" id="errorText"></span>
-  </div>
-
-  <!-- System Info -->
+  <div class="error-banner" id="errorBanner"><span class="err-icon">⚠️</span><span class="err-text" id="errorText"></span></div>
   <div class="sys-grid" id="sysGrid"></div>
-
-  <!-- Fit Filter Toolbar -->
   <div class="toolbar" id="fitToolbar"></div>
-  <!-- Category Filter Toolbar -->
   <div class="toolbar" style="margin-top:-4px" id="catToolbar"></div>
-
-  <!-- Table -->
   <div class="table-wrap">
     <table>
       <thead id="tableHead"></thead>
       <tbody id="modelBody">
-        <tr><td colspan="10"><div class="loading"><div class="spinner"></div><div class="loading-text" id="loadingText"></div></div></td></tr>
+        <tr><td colspan="10"><div class="loading"><div class="spinner"></div><div class="loading-text" id="loadingText">Loading...</div></div></td></tr>
       </tbody>
     </table>
   </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    NeuralDock v1.0.0 · Powered by <a href="https://github.com/AlexsJones/llmfit" target="_blank">llmfit</a> · <a href="https://github.com/anson55sky/NeuralDock" target="_blank">GitHub</a>
-  </div>
+  <div class="footer">NeuralDock v1.0.0 · Powered by <a href="https://github.com/AlexsJones/llmfit" target="_blank">llmfit</a> · <a href="https://github.com/anson55sky/NeuralDock" target="_blank">GitHub</a></div>
 </div>
-
-<!-- Detail Modal -->
-<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
-  <div class="modal" id="modalContent"></div>
-</div>
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)"><div class="modal" id="modalContent"></div></div>
 
 <script>
-/* ===== Full i18n Dictionary ===== */
-const I18N = {
+(function(){
+"use strict";
+
+/* ========== i18n ========== */
+var LANG = {
   zh: {
-    title: 'NeuralDock · 本地大模型适配分析',
-    subtitle: '本地大模型硬件适配分析工具 — 智能匹配最佳模型',
-    searchPlaceholder: '搜索模型名称、提供商、用途...',
-    loading: '正在分析硬件并加载模型数据...',
-    noResult: '没有找到匹配的模型',
-    statPrefix: '共 ', statSuffix: ' 个模型',
-    fitAll: '全部', fitPerfect: '✅ 完美适配', fitGood: '👍 良好', fitMarginal: '⚠️ 勉强', fitTight: '❌ 不适合',
-    catAll: '全部类别', catGeneral: '🌐 通用', catCoding: '💻 编程', catChat: '💬 对话',
-    catReasoning: '🧠 推理', catMultimodal: '🖼 多模态', catEmbedding: '📐 嵌入',
-    thScore: '综合评分', thName: '模型名称', thCategory: '类别', thParams: '参数量',
-    thFit: '适配度', thSpeed: '推理速度', thQuant: '量化方案', thMem: '内存占用', thMode: '运行模式', thCtx: '上下文',
-    catMap: { General:'通用', Coding:'编程', Chat:'对话', Reasoning:'推理', Multimodal:'多模态', Embedding:'嵌入' },
-    fitMap: { Perfect:'完美适配', Good:'良好', Marginal:'勉强运行', 'Too Tight':'不适合' },
-    scoreLabelMap: { quality:'质量', speed:'速度', fit:'适配', context:'上下文' },
-    sysLabels: { cpu:'处理器', gpu:'GPU', totalMem:'总内存', availMem:'可用内存', gpuCount:'GPU 数量' },
-    sysSubs: { cores:'核心', unified:'统一内存架构', discrete:'独立显存', vram:'GPU 显存', gpuYes:'已检测到 GPU', gpuNo:'未检测到 GPU' },
-    detailScore:'综合评分', detailParams:'参数量', detailSpeed:'推理速度', detailQuant:'量化方案',
-    detailMode:'运行模式', detailCtx:'上下文长度', detailMem:'内存需求', detailUse:'用途',
-    detailProvider:'提供商', detailDate:'发布日期', detailScoreBreakdown:'📊 评分细项', detailNotes:'📝 备注',
-    errPrefix: '错误：',
+    subtitle:'本地大模型硬件适配分析工具 — 智能匹配最佳模型',
+    searchPH:'搜索模型名称、提供商、用途...',
+    loading:'正在分析硬件并加载模型数据...',
+    noResult:'没有找到匹配的模型',
+    statPre:'共 ', statSuf:' 个模型',
+    fitAll:'全部', fitPerfect:'✅ 完美适配', fitGood:'👍 良好', fitMarginal:'⚠️ 勉强', fitTight:'❌ 不适合',
+    catAll:'全部类别', catGeneral:'🌐 通用', catCoding:'💻 编程', catChat:'💬 对话',
+    catReasoning:'🧠 推理', catMultimodal:'🖼 多模态', catEmbedding:'📐 嵌入',
+    thScore:'综合评分', thName:'模型名称', thCat:'类别', thParams:'参数量',
+    thFit:'适配度', thSpeed:'推理速度', thQuant:'量化方案', thMem:'内存占用', thMode:'运行模式', thCtx:'上下文',
+    cat:{General:'通用',Coding:'编程',Chat:'对话',Reasoning:'推理',Multimodal:'多模态',Embedding:'嵌入'},
+    fit:{Perfect:'完美适配',Good:'良好',Marginal:'勉强运行','Too Tight':'不适合'},
+    scLabel:{quality:'质量',speed:'速度',fit:'适配',context:'上下文'},
+    sys:{cpu:'处理器',gpu:'GPU',totalMem:'总内存',availMem:'可用内存',gpuCount:'GPU 数量'},
+    sysSub:{cores:'核心',unified:'统一内存架构',discrete:'独立显存',vram:'GPU 显存',gpuY:'已检测到 GPU',gpuN:'未检测到 GPU'},
+    dScore:'综合评分',dParams:'参数量',dSpeed:'推理速度',dQuant:'量化方案',
+    dMode:'运行模式',dCtx:'上下文长度',dMem:'内存需求',dUse:'用途',
+    dProvider:'提供商',dDate:'发布日期',dBreakdown:'📊 评分细项',dNotes:'📝 备注',
+    errPre:'错误：'
   },
   en: {
-    title: 'NeuralDock · Local LLM Analyzer',
-    subtitle: 'Local LLM Hardware Compatibility Analyzer — Find Your Best Fit',
-    searchPlaceholder: 'Search model name, provider, use case...',
-    loading: 'Analyzing hardware & loading model data...',
-    noResult: 'No matching models found',
-    statPrefix: '', statSuffix: ' models',
-    fitAll: 'All', fitPerfect: '✅ Perfect', fitGood: '👍 Good', fitMarginal: '⚠️ Marginal', fitTight: '❌ Too Tight',
-    catAll: 'All Categories', catGeneral: '🌐 General', catCoding: '💻 Coding', catChat: '💬 Chat',
-    catReasoning: '🧠 Reasoning', catMultimodal: '🖼 Multimodal', catEmbedding: '📐 Embedding',
-    thScore: 'Score', thName: 'Model Name', thCategory: 'Category', thParams: 'Params',
-    thFit: 'Fit Level', thSpeed: 'Speed', thQuant: 'Quantization', thMem: 'Memory', thMode: 'Runtime', thCtx: 'Context',
-    catMap: { General:'General', Coding:'Coding', Chat:'Chat', Reasoning:'Reasoning', Multimodal:'Multimodal', Embedding:'Embedding' },
-    fitMap: { Perfect:'Perfect', Good:'Good', Marginal:'Marginal', 'Too Tight':'Too Tight' },
-    scoreLabelMap: { quality:'Quality', speed:'Speed', fit:'Fit', context:'Context' },
-    sysLabels: { cpu:'Processor', gpu:'GPU', totalMem:'Total RAM', availMem:'Available', gpuCount:'GPU Count' },
-    sysSubs: { cores:'Cores', unified:'Unified Memory', discrete:'Discrete VRAM', vram:'GPU VRAM', gpuYes:'GPU Detected', gpuNo:'No GPU Detected' },
-    detailScore:'Overall Score', detailParams:'Parameters', detailSpeed:'Inference Speed', detailQuant:'Quantization',
-    detailMode:'Runtime', detailCtx:'Context Length', detailMem:'Memory Required', detailUse:'Use Case',
-    detailProvider:'Provider', detailDate:'Release Date', detailScoreBreakdown:'📊 Score Breakdown', detailNotes:'📝 Notes',
-    errPrefix: 'Error: ',
+    subtitle:'Local LLM Hardware Compatibility Analyzer — Find Your Best Fit',
+    searchPH:'Search model name, provider, use case...',
+    loading:'Analyzing hardware & loading model data...',
+    noResult:'No matching models found',
+    statPre:'', statSuf:' models',
+    fitAll:'All', fitPerfect:'✅ Perfect', fitGood:'👍 Good', fitMarginal:'⚠️ Marginal', fitTight:'❌ Too Tight',
+    catAll:'All Categories', catGeneral:'🌐 General', catCoding:'💻 Coding', catChat:'💬 Chat',
+    catReasoning:'🧠 Reasoning', catMultimodal:'🖼 Multimodal', catEmbedding:'📐 Embedding',
+    thScore:'Score', thName:'Model Name', thCat:'Category', thParams:'Params',
+    thFit:'Fit Level', thSpeed:'Speed', thQuant:'Quantization', thMem:'Memory', thMode:'Runtime', thCtx:'Context',
+    cat:{General:'General',Coding:'Coding',Chat:'Chat',Reasoning:'Reasoning',Multimodal:'Multimodal',Embedding:'Embedding'},
+    fit:{Perfect:'Perfect',Good:'Good',Marginal:'Marginal','Too Tight':'Too Tight'},
+    scLabel:{quality:'Quality',speed:'Speed',fit:'Fit',context:'Context'},
+    sys:{cpu:'Processor',gpu:'GPU',totalMem:'Total RAM',availMem:'Available',gpuCount:'GPU Count'},
+    sysSub:{cores:'Cores',unified:'Unified Memory',discrete:'Discrete VRAM',vram:'GPU VRAM',gpuY:'GPU Detected',gpuN:'No GPU Detected'},
+    dScore:'Overall Score',dParams:'Parameters',dSpeed:'Inference Speed',dQuant:'Quantization',
+    dMode:'Runtime',dCtx:'Context Length',dMem:'Memory Required',dUse:'Use Case',
+    dProvider:'Provider',dDate:'Release Date',dBreakdown:'📊 Score Breakdown',dNotes:'📝 Notes',
+    errPre:'Error: '
   }
 };
 
-/* ===== State ===== */
-let lang = localStorage.getItem('nd_lang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
-let allModels = [], sysData = null;
-let currentFit = 'all', currentCat = 'all', currentSort = 'score', sortDesc = true, searchText = '';
-const catClass = {General:'cat-general',Coding:'cat-coding',Chat:'cat-chat',Reasoning:'cat-reasoning',Multimodal:'cat-multimodal',Embedding:'cat-embedding'};
-const fitClass = {Perfect:'badge-perfect',Good:'badge-good',Marginal:'badge-marginal','Too Tight':'badge-tight'};
-const scoreColor = {quality:'#7c6aef',speed:'#34d399',fit:'#60a5fa',context:'#fbbf24'};
-function t(k){return I18N[lang][k]||k}
-function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+/* ========== State ========== */
+var lang = localStorage.getItem('nd_lang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
+var allModels = [];
+var sysInfo = null;
+var curFit = 'all';
+var curCat = 'all';
+var curSort = 'score';
+var sortDesc = true;
+var searchText = '';
+var displayModels = [];
 
-/* ===== Language ===== */
-function setLang(l){
-  lang=l; localStorage.setItem('nd_lang',l);
-  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
-  document.title=t('title');
-  document.documentElement.lang=l==='zh'?'zh-CN':'en';
-  rebuildUI();
-}
+var catCls = {General:'cat-general',Coding:'cat-coding',Chat:'cat-chat',Reasoning:'cat-reasoning',Multimodal:'cat-multimodal',Embedding:'cat-embedding'};
+var fitCls = {Perfect:'badge-perfect',Good:'badge-good',Marginal:'badge-marginal','Too Tight':'badge-tight'};
+var scColor = {quality:'#7c6aef',speed:'#34d399',fit:'#60a5fa',context:'#fbbf24'};
 
-function rebuildUI(){
-  document.getElementById('headerSub').textContent=t('subtitle');
-  document.getElementById('loadingText').textContent=t('loading');
-  renderFitBar(); renderCatBar(); renderTHead();
-  if(sysData) renderSys(sysData);
-  if(allModels.length) renderTable();
-}
+function L(k){ return LANG[lang][k] || k; }
+function esc(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
 
-/* ===== Toolbars ===== */
-function renderFitBar(){
-  const fits=[{k:'all',l:t('fitAll')},{k:'Perfect',l:t('fitPerfect')},{k:'Good',l:t('fitGood')},{k:'Marginal',l:t('fitMarginal')},{k:'Too Tight',l:t('fitTight')}];
-  document.getElementById('fitToolbar').innerHTML=
-    `<div class="search-box"><span class="si">🔍</span><input id="searchInput" placeholder="${esc(t('searchPlaceholder'))}" value="${esc(searchText)}"></div>`+
-    fits.map(f=>`<button class="fbtn${currentFit===f.k?' active':''}" data-fit="${f.k}" onclick="setFit('${f.k}')">${f.l}</button>`).join('')+
-    `<span class="stat-pill" id="statPill">${t('statPrefix')}<b>0</b>${t('statSuffix')}</span>`;
-  document.getElementById('searchInput').addEventListener('input',e=>{searchText=e.target.value.toLowerCase();renderTable()});
-}
-function renderCatBar(){
-  const cats=[{k:'all',l:t('catAll')},{k:'General',l:t('catGeneral')},{k:'Coding',l:t('catCoding')},{k:'Chat',l:t('catChat')},{k:'Reasoning',l:t('catReasoning')},{k:'Multimodal',l:t('catMultimodal')},{k:'Embedding',l:t('catEmbedding')}];
-  document.getElementById('catToolbar').innerHTML=cats.map(c=>`<button class="fbtn${currentCat===c.k?' active':''}" data-cat="${c.k}" onclick="setCat('${c.k}')">${c.l}</button>`).join('');
-}
-function renderTHead(){
-  const cols=[{k:'score',l:t('thScore')},{k:'name',l:t('thName')},{k:'category',l:t('thCategory')},{k:'params_b',l:t('thParams')},{k:'fit_level',l:t('thFit')},{k:'estimated_tps',l:t('thSpeed')},{k:'best_quant',l:t('thQuant')},{k:'utilization_pct',l:t('thMem')},{k:'run_mode',l:t('thMode')},{k:'context_length',l:t('thCtx')}];
-  document.getElementById('tableHead').innerHTML='<tr>'+cols.map(c=>{
-    const s=currentSort===c.k, a=s?(sortDesc?' ▼':' ▲'):'';
-    return `<th onclick="sortBy('${c.k}')" class="${s?'sorted':''}">${c.l}<span class="arrow">${a}</span></th>`;
-  }).join('')+'</tr>';
+/* ========== DOM refs ========== */
+var $=function(id){return document.getElementById(id);};
+
+/* ========== Language Switch ========== */
+window.switchLang = function(l){
+  lang = l;
+  localStorage.setItem('nd_lang', l);
+  document.documentElement.lang = l==='zh' ? 'zh-CN' : 'en';
+  document.title = 'NeuralDock · ' + (l==='zh' ? '本地大模型适配分析' : 'Local LLM Analyzer');
+  // Update toggle buttons
+  var btns = $('langToggle').querySelectorAll('.lang-btn');
+  for(var i=0;i<btns.length;i++) btns[i].classList.toggle('active', btns[i].getAttribute('data-lang')===l);
+  // Rebuild everything
+  fullRender();
+};
+
+/* ========== Full Render (called on lang switch & data load) ========== */
+function fullRender(){
+  $('headerSub').textContent = L('subtitle');
+  renderSysCards();
+  renderFitToolbar();
+  renderCatToolbar();
+  renderTableHeader();
+  renderModelRows();
 }
 
-/* ===== Init ===== */
-async function init(){
-  setLang(lang);
-  try{
-    const[sysR,modR]=await Promise.all([fetch('/api/system').then(r=>r.json()),fetch('/api/models').then(r=>r.json())]);
-    if(sysR.error){showError(sysR.error);return}
-    if(modR.error){showError(modR.error);return}
-    sysData=sysR; renderSys(sysR);
-    allModels=modR.models||[]; renderTable();
-  }catch(e){showError(e.message)}
-}
-function showError(msg){
-  const b=document.getElementById('errorBanner'),tx=document.getElementById('errorText');
-  tx.textContent=t('errPrefix')+msg; b.classList.add('show');
-}
-
-/* ===== System Cards ===== */
-function renderSys(data){
-  const s=data.system||data, sl=I18N[lang].sysLabels, ss=I18N[lang].sysSubs;
-  const cards=[
-    {icon:'🖥',label:sl.cpu,value:s.cpu_name||'--',sub:`${s.cpu_cores||'--'} ${ss.cores}`},
-    {icon:'🎮',label:sl.gpu,value:s.gpu_name||'--',sub:s.backend||''},
-    {icon:'💾',label:sl.totalMem,value:`${(s.total_ram_gb||0).toFixed(1)} GB`,sub:s.unified_memory?ss.unified:ss.discrete},
-    {icon:'📊',label:sl.availMem,value:`${(s.available_ram_gb||0).toFixed(1)} GB`,sub:`${ss.vram} ${(s.gpu_vram_gb||0).toFixed(1)} GB`},
-    {icon:'⚡',label:sl.gpuCount,value:s.gpu_count||1,sub:s.has_gpu?ss.gpuYes:ss.gpuNo}
+/* ========== System Cards ========== */
+function renderSysCards(){
+  if(!sysInfo) { $('sysGrid').innerHTML=''; return; }
+  var s = sysInfo.system || sysInfo;
+  var sl = LANG[lang].sys;
+  var ss = LANG[lang].sysSub;
+  var cards = [
+    {icon:'🖥',label:sl.cpu, value:s.cpu_name||'--', sub:(s.cpu_cores||'--')+' '+ss.cores},
+    {icon:'🎮',label:sl.gpu, value:s.gpu_name||'--', sub:s.backend||''},
+    {icon:'💾',label:sl.totalMem, value:(s.total_ram_gb||0).toFixed(1)+' GB', sub:s.unified_memory?ss.unified:ss.discrete},
+    {icon:'📊',label:sl.availMem, value:(s.available_ram_gb||0).toFixed(1)+' GB', sub:ss.vram+' '+(s.gpu_vram_gb||0).toFixed(1)+' GB'},
+    {icon:'⚡',label:sl.gpuCount, value:s.gpu_count||1, sub:s.has_gpu?ss.gpuY:ss.gpuN}
   ];
-  document.getElementById('sysGrid').innerHTML=cards.map(c=>`<div class="sys-card"><span class="icon">${c.icon}</span><div class="label">${c.label}</div><div class="value">${c.value}</div><div class="sub">${c.sub}</div></div>`).join('');
+  var h='';
+  for(var i=0;i<cards.length;i++){
+    var c=cards[i];
+    h+='<div class="sys-card"><span class="icon">'+c.icon+'</span><div class="label">'+esc(c.label)+'</div><div class="value">'+esc(String(c.value))+'</div><div class="sub">'+esc(c.sub)+'</div></div>';
+  }
+  $('sysGrid').innerHTML=h;
 }
 
-/* ===== Filters & Sort ===== */
-function setFit(f){currentFit=f;document.querySelectorAll('[data-fit]').forEach(b=>b.classList.toggle('active',b.dataset.fit===f));renderTable()}
-function setCat(c){currentCat=c;document.querySelectorAll('[data-cat]').forEach(b=>b.classList.toggle('active',b.dataset.cat===c));renderTable()}
-function sortBy(k){if(currentSort===k)sortDesc=!sortDesc;else{currentSort=k;sortDesc=true}renderTHead();renderTable()}
+/* ========== Fit Toolbar ========== */
+function renderFitToolbar(){
+  var fits=[{k:'all',l:L('fitAll')},{k:'Perfect',l:L('fitPerfect')},{k:'Good',l:L('fitGood')},{k:'Marginal',l:L('fitMarginal')},{k:'Too Tight',l:L('fitTight')}];
+  var h='<div class="search-box"><span class="si">🔍</span><input id="searchInput" placeholder="'+esc(L('searchPH'))+'" value="'+esc(searchText)+'"></div>';
+  for(var i=0;i<fits.length;i++){
+    var f=fits[i];
+    h+='<button class="fbtn'+(curFit===f.k?' active':'')+'" data-fitkey="'+f.k+'">'+f.l+'</button>';
+  }
+  h+='<span class="stat-pill" id="statPill"></span>';
+  $('fitToolbar').innerHTML=h;
+  // Bind events
+  $('searchInput').addEventListener('input',function(e){searchText=e.target.value.toLowerCase();renderModelRows();});
+  var btns=$('fitToolbar').querySelectorAll('.fbtn');
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click',function(){
+      curFit=this.getAttribute('data-fitkey');
+      var all=$('fitToolbar').querySelectorAll('.fbtn');
+      for(var j=0;j<all.length;j++) all[j].classList.toggle('active',all[j].getAttribute('data-fitkey')===curFit);
+      renderModelRows();
+    });
+  }
+}
 
-/* ===== Render Table ===== */
-function renderTable(){
-  const cm=I18N[lang].catMap, fm=I18N[lang].fitMap;
-  let models=[...allModels];
-  if(currentFit!=='all') models=models.filter(m=>m.fit_level===currentFit);
-  if(currentCat!=='all') models=models.filter(m=>m.category===currentCat);
-  if(searchText) models=models.filter(m=>`${m.name} ${m.provider} ${m.category} ${m.use_case} ${m.parameter_count} ${cm[m.category]||''}`.toLowerCase().includes(searchText));
-  const fo={Perfect:0,Good:1,Marginal:2,'Too Tight':3};
-  models.sort((a,b)=>{
-    if(currentSort==='fit_level')return sortDesc?(fo[a.fit_level]||9)-(fo[b.fit_level]||9):(fo[b.fit_level]||9)-(fo[a.fit_level]||9);
-    if(['name','category','best_quant','run_mode'].includes(currentSort)){const va=(a[currentSort]||'').toLowerCase(),vb=(b[currentSort]||'').toLowerCase();return sortDesc?vb.localeCompare(va):va.localeCompare(vb)}
-    return sortDesc?(b[currentSort]||0)-(a[currentSort]||0):(a[currentSort]||0)-(b[currentSort]||0);
+/* ========== Cat Toolbar ========== */
+function renderCatToolbar(){
+  var cats=[{k:'all',l:L('catAll')},{k:'General',l:L('catGeneral')},{k:'Coding',l:L('catCoding')},{k:'Chat',l:L('catChat')},{k:'Reasoning',l:L('catReasoning')},{k:'Multimodal',l:L('catMultimodal')},{k:'Embedding',l:L('catEmbedding')}];
+  var h='';
+  for(var i=0;i<cats.length;i++){
+    var c=cats[i];
+    h+='<button class="fbtn'+(curCat===c.k?' active':'')+'" data-catkey="'+c.k+'">'+c.l+'</button>';
+  }
+  $('catToolbar').innerHTML=h;
+  var btns=$('catToolbar').querySelectorAll('.fbtn');
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click',function(){
+      curCat=this.getAttribute('data-catkey');
+      var all=$('catToolbar').querySelectorAll('.fbtn');
+      for(var j=0;j<all.length;j++) all[j].classList.toggle('active',all[j].getAttribute('data-catkey')===curCat);
+      renderModelRows();
+    });
+  }
+}
+
+/* ========== Table Header ========== */
+function renderTableHeader(){
+  var cols=[
+    {k:'score',l:L('thScore')},{k:'name',l:L('thName')},{k:'category',l:L('thCat')},{k:'params_b',l:L('thParams')},
+    {k:'fit_level',l:L('thFit')},{k:'estimated_tps',l:L('thSpeed')},{k:'best_quant',l:L('thQuant')},
+    {k:'utilization_pct',l:L('thMem')},{k:'run_mode',l:L('thMode')},{k:'context_length',l:L('thCtx')}
+  ];
+  var h='<tr>';
+  for(var i=0;i<cols.length;i++){
+    var c=cols[i];
+    var isSorted=curSort===c.k;
+    var arrow=isSorted?(sortDesc?' ▼':' ▲'):'';
+    h+='<th data-sortkey="'+c.k+'"'+(isSorted?' class="sorted"':'')+'>'+esc(c.l)+'<span class="arrow">'+arrow+'</span></th>';
+  }
+  h+='</tr>';
+  $('tableHead').innerHTML=h;
+  var ths=$('tableHead').querySelectorAll('th');
+  for(var i=0;i<ths.length;i++){
+    ths[i].addEventListener('click',function(){
+      var k=this.getAttribute('data-sortkey');
+      if(curSort===k) sortDesc=!sortDesc; else{curSort=k;sortDesc=true;}
+      renderTableHeader();
+      renderModelRows();
+    });
+  }
+}
+
+/* ========== Model Rows ========== */
+function renderModelRows(){
+  if(!allModels.length){
+    $('modelBody').innerHTML='<tr><td colspan="10"><div class="loading"><div class="spinner"></div><div class="loading-text">'+esc(L('loading'))+'</div></div></td></tr>';
+    return;
+  }
+  var cm=LANG[lang].cat, fm=LANG[lang].fit;
+  var models=allModels.slice();
+  // Filter
+  if(curFit!=='all') models=models.filter(function(m){return m.fit_level===curFit;});
+  if(curCat!=='all') models=models.filter(function(m){return m.category===curCat;});
+  if(searchText) models=models.filter(function(m){
+    var hay=(m.name+' '+m.provider+' '+m.category+' '+(m.use_case||'')+' '+m.parameter_count+' '+(cm[m.category]||'')).toLowerCase();
+    return hay.indexOf(searchText)!==-1;
   });
-  const pill=document.getElementById('statPill');
-  if(pill) pill.innerHTML=`${t('statPrefix')}<b>${models.length}</b>${t('statSuffix')}`;
-  if(!models.length){document.getElementById('modelBody').innerHTML=`<tr><td colspan="10" style="text-align:center;padding:40px;color:var(--text2)">${t('noResult')}</td></tr>`;return}
-  document.getElementById('modelBody').innerHTML=models.map((m,i)=>{
-    const u=m.utilization_pct||0, mc=u<50?'mem-low':u<70?'mem-mid':u<90?'mem-high':'mem-full';
-    const tps=m.estimated_tps?m.estimated_tps.toFixed(1):'--';
-    const ctx=m.context_length?(m.context_length>=1000?(m.context_length/1024).toFixed(0)+'K':m.context_length):'--';
-    return `<tr onclick="showDetail(${i})"><td><div class="score-cell"><span class="score-num">${(m.score||0).toFixed(1)}</span><div class="score-bar-bg"><div class="score-bar" style="width:${m.score||0}%"></div></div></div></td><td><b>${esc(m.name)}</b></td><td><span class="cat-badge ${catClass[m.category]||''}">${cm[m.category]||m.category}</span></td><td>${m.parameter_count||'--'}</td><td><span class="badge ${fitClass[m.fit_level]||''}">${fm[m.fit_level]||m.fit_level}</span></td><td>${tps} <span style="color:var(--text2);font-size:.75rem">tok/s</span></td><td><code style="background:var(--bg4);padding:2px 8px;border-radius:4px;font-size:.78rem">${m.best_quant||'--'}</code></td><td><div class="mem-wrap"><div class="mem-bg"><div class="mem-bar ${mc}" style="width:${u}%"></div></div><span style="font-size:.78rem">${u.toFixed(0)}%</span></div></td><td>${m.run_mode||'--'}</td><td>${ctx}</td></tr>`;
-  }).join('');
-  window._dm=models;
+  // Sort
+  var fo={Perfect:0,Good:1,Marginal:2,'Too Tight':3};
+  models.sort(function(a,b){
+    var va,vb;
+    if(curSort==='fit_level'){va=fo[a.fit_level]||9;vb=fo[b.fit_level]||9;}
+    else if(curSort==='name'||curSort==='category'||curSort==='best_quant'||curSort==='run_mode'){
+      va=(a[curSort]||'').toLowerCase();vb=(b[curSort]||'').toLowerCase();
+      return sortDesc?vb.localeCompare(va):va.localeCompare(vb);
+    } else {va=a[curSort]||0;vb=b[curSort]||0;}
+    return sortDesc?vb-va:va-vb;
+  });
+  displayModels=models;
+  // Stat pill
+  var pill=$('statPill');
+  if(pill) pill.innerHTML=L('statPre')+'<b>'+models.length+'</b>'+L('statSuf');
+  // Empty state
+  if(!models.length){
+    $('modelBody').innerHTML='<tr><td colspan="10" style="text-align:center;padding:40px;color:var(--text2)">'+esc(L('noResult'))+'</td></tr>';
+    return;
+  }
+  // Build rows
+  var h='';
+  for(var i=0;i<models.length;i++){
+    var m=models[i];
+    var u=m.utilization_pct||0;
+    var mc=u<50?'mem-low':u<70?'mem-mid':u<90?'mem-high':'mem-full';
+    var tps=m.estimated_tps?m.estimated_tps.toFixed(1):'--';
+    var ctx=m.context_length?(m.context_length>=1000?(m.context_length/1024).toFixed(0)+'K':m.context_length):'--';
+    h+='<tr data-ridx="'+i+'">';
+    h+='<td><div class="score-cell"><span class="score-num">'+(m.score||0).toFixed(1)+'</span><div class="score-bar-bg"><div class="score-bar" style="width:'+(m.score||0)+'%"></div></div></div></td>';
+    h+='<td><b>'+esc(m.name)+'</b></td>';
+    h+='<td><span class="cat-badge '+(catCls[m.category]||'')+'">'+(cm[m.category]||m.category)+'</span></td>';
+    h+='<td>'+(m.parameter_count||'--')+'</td>';
+    h+='<td><span class="badge '+(fitCls[m.fit_level]||'')+'">'+(fm[m.fit_level]||m.fit_level)+'</span></td>';
+    h+='<td>'+tps+' <span style="color:var(--text2);font-size:.75rem">tok/s</span></td>';
+    h+='<td><code style="background:var(--bg4);padding:2px 8px;border-radius:4px;font-size:.78rem">'+(m.best_quant||'--')+'</code></td>';
+    h+='<td><div class="mem-wrap"><div class="mem-bg"><div class="mem-bar '+mc+'" style="width:'+u+'%"></div></div><span style="font-size:.78rem">'+u.toFixed(0)+'%</span></div></td>';
+    h+='<td>'+(m.run_mode||'--')+'</td>';
+    h+='<td>'+ctx+'</td>';
+    h+='</tr>';
+  }
+  $('modelBody').innerHTML=h;
+  // Bind row clicks
+  var rows=$('modelBody').querySelectorAll('tr');
+  for(var i=0;i<rows.length;i++){
+    rows[i].addEventListener('click',function(){
+      var idx=parseInt(this.getAttribute('data-ridx'));
+      showDetail(idx);
+    });
+  }
 }
 
-/* ===== Detail Modal ===== */
-function showDetail(i){
-  const m=window._dm[i]; if(!m)return;
-  const cm=I18N[lang].catMap, fm=I18N[lang].fitMap, slm=I18N[lang].scoreLabelMap;
-  const u=m.utilization_pct||0, sc=m.score_components||{};
-  const mr=m.memory_required_gb?m.memory_required_gb.toFixed(1):'--', ma=m.memory_available_gb?m.memory_available_gb.toFixed(1):'--';
-  let sh=''; for(const[k,lb]of Object.entries(slm)){const v=sc[k]||0;sh+=`<div class="score-row"><span class="sr-label">${lb}</span><div class="sr-bar-bg"><div class="sr-bar" style="width:${v}%;background:${scoreColor[k]}"></div></div><span class="sr-val">${v.toFixed(0)}</span></div>`}
-  let nh=''; if(m.notes&&m.notes.length)nh=`<div style="margin-top:16px"><h4 style="font-size:.82rem;color:var(--text2);margin-bottom:8px">${t('detailNotes')}</h4>${m.notes.map(n=>`<div class="note-item">${esc(n)}</div>`).join('')}</div>`;
-  document.getElementById('modalContent').innerHTML=`
-    <div class="modal-header"><div><div class="modal-title">${esc(m.name)}</div><div style="margin-top:6px;display:flex;gap:8px;align-items:center"><span class="badge ${fitClass[m.fit_level]||''}">${fm[m.fit_level]||m.fit_level}</span><span class="cat-badge ${catClass[m.category]||''}">${cm[m.category]||m.category}</span>${m.is_moe?'<span class="badge" style="background:rgba(244,114,182,.12);color:#f472b6">MoE</span>':''}</div></div><button class="modal-close" onclick="closeModal()">✕</button></div>
-    <div class="detail-grid">
-      <div class="detail-item"><div class="dl">${t('detailScore')}</div><div class="dv" style="color:var(--accent2)">${(m.score||0).toFixed(1)} / 100</div></div>
-      <div class="detail-item"><div class="dl">${t('detailParams')}</div><div class="dv">${m.parameter_count||'--'}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailSpeed')}</div><div class="dv">${m.estimated_tps?m.estimated_tps.toFixed(1)+' tok/s':'--'}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailQuant')}</div><div class="dv">${m.best_quant||'--'}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailMode')}</div><div class="dv">${m.run_mode||'--'} · ${m.runtime_label||m.runtime||'--'}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailCtx')}</div><div class="dv">${m.context_length?m.context_length.toLocaleString():'--'}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailMem')}</div><div class="dv">${mr} / ${ma} GB <span style="color:var(--text2);font-size:.8rem">(${u.toFixed(0)}%)</span></div></div>
-      <div class="detail-item"><div class="dl">${t('detailUse')}</div><div class="dv" style="font-size:.88rem;white-space:normal">${esc(m.use_case||'--')}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailProvider')}</div><div class="dv">${esc(m.provider||'--')}</div></div>
-      <div class="detail-item"><div class="dl">${t('detailDate')}</div><div class="dv">${m.release_date||'--'}</div></div>
-    </div>
-    <h4 style="font-size:.85rem;color:var(--text2);margin-bottom:12px">${t('detailScoreBreakdown')}</h4>
-    <div class="score-breakdown">${sh}</div>${nh}`;
-  document.getElementById('modalOverlay').classList.add('show');
-}
-function closeModal(e){if(e&&e.target!==e.currentTarget)return;document.getElementById('modalOverlay').classList.remove('show')}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+/* ========== Detail Modal ========== */
+window.showDetail=function(idx){
+  var m=displayModels[idx]; if(!m) return;
+  var cm=LANG[lang].cat, fm=LANG[lang].fit, slm=LANG[lang].scLabel;
+  var u=m.utilization_pct||0, sc=m.score_components||{};
+  var mr=m.memory_required_gb?m.memory_required_gb.toFixed(1):'--';
+  var ma=m.memory_available_gb?m.memory_available_gb.toFixed(1):'--';
+  // Score breakdown
+  var sh='';
+  var scKeys=['quality','speed','fit','context'];
+  for(var i=0;i<scKeys.length;i++){
+    var k=scKeys[i], v=sc[k]||0;
+    sh+='<div class="score-row"><span class="sr-label">'+(slm[k]||k)+'</span><div class="sr-bar-bg"><div class="sr-bar" style="width:'+v+'%;background:'+scColor[k]+'"></div></div><span class="sr-val">'+v.toFixed(0)+'</span></div>';
+  }
+  // Notes
+  var nh='';
+  if(m.notes&&m.notes.length){
+    nh='<div style="margin-top:16px"><h4 style="font-size:.82rem;color:var(--text2);margin-bottom:8px">'+L('dNotes')+'</h4>';
+    for(var i=0;i<m.notes.length;i++) nh+='<div class="note-item">'+esc(m.notes[i])+'</div>';
+    nh+='</div>';
+  }
+  $('modalContent').innerHTML=
+    '<div class="modal-header"><div><div class="modal-title">'+esc(m.name)+'</div>'+
+    '<div style="margin-top:6px;display:flex;gap:8px;align-items:center">'+
+    '<span class="badge '+(fitCls[m.fit_level]||'')+'">'+(fm[m.fit_level]||m.fit_level)+'</span>'+
+    '<span class="cat-badge '+(catCls[m.category]||'')+'">'+(cm[m.category]||m.category)+'</span>'+
+    (m.is_moe?'<span class="badge" style="background:rgba(244,114,182,.12);color:#f472b6">MoE</span>':'')+
+    '</div></div><button class="modal-close" onclick="closeModal()">✕</button></div>'+
+    '<div class="detail-grid">'+
+    '<div class="detail-item"><div class="dl">'+L('dScore')+'</div><div class="dv" style="color:var(--accent2)">'+(m.score||0).toFixed(1)+' / 100</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dParams')+'</div><div class="dv">'+(m.parameter_count||'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dSpeed')+'</div><div class="dv">'+(m.estimated_tps?m.estimated_tps.toFixed(1)+' tok/s':'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dQuant')+'</div><div class="dv">'+(m.best_quant||'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dMode')+'</div><div class="dv">'+(m.run_mode||'--')+' · '+(m.runtime_label||m.runtime||'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dCtx')+'</div><div class="dv">'+(m.context_length?m.context_length.toLocaleString():'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dMem')+'</div><div class="dv">'+mr+' / '+ma+' GB <span style="color:var(--text2);font-size:.8rem">('+u.toFixed(0)+'%)</span></div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dUse')+'</div><div class="dv" style="font-size:.88rem;white-space:normal">'+esc(m.use_case||'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dProvider')+'</div><div class="dv">'+esc(m.provider||'--')+'</div></div>'+
+    '<div class="detail-item"><div class="dl">'+L('dDate')+'</div><div class="dv">'+(m.release_date||'--')+'</div></div>'+
+    '</div>'+
+    '<h4 style="font-size:.85rem;color:var(--text2);margin-bottom:12px">'+L('dBreakdown')+'</h4>'+
+    '<div class="score-breakdown">'+sh+'</div>'+nh;
+  $('modalOverlay').classList.add('show');
+};
 
-init();
+window.closeModal=function(e){
+  if(e && e.target!==e.currentTarget) return;
+  $('modalOverlay').classList.remove('show');
+};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+
+/* ========== Init ========== */
+(async function(){
+  // Set initial lang
+  switchLang(lang);
+  try{
+    var sysR = await fetch('/api/system').then(function(r){return r.json();});
+    var modR = await fetch('/api/models').then(function(r){return r.json();});
+    if(sysR.error){$('errorText').textContent=L('errPre')+sysR.error;$('errorBanner').classList.add('show');return;}
+    if(modR.error){$('errorText').textContent=L('errPre')+modR.error;$('errorBanner').classList.add('show');return;}
+    sysInfo = sysR;
+    allModels = modR.models || [];
+    fullRender();
+  }catch(e){
+    $('errorText').textContent=L('errPre')+e.message;
+    $('errorBanner').classList.add('show');
+  }
+})();
+
+})();
 </script>
 </body>
 </html>
