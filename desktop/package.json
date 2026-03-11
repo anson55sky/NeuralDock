@@ -40,7 +40,7 @@
     ],
     "mac": {
       "category": "public.app-category.developer-tools",
-      "icon": "icon.icns",
+      "icon": "build/icon.icns",
       "target": [
         {
           "target": "dmg",
@@ -50,7 +50,7 @@
       "darkModeSupport": true
     },
     "win": {
-      "icon": "icon.ico",
+      "icon": "build/icon.ico",
       "target": [
         {
           "target": "nsis",
@@ -64,8 +64,8 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "installerIcon": "icon.ico",
-      "uninstallerIcon": "icon.ico"
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico"
     },
     "dmg": {
       "contents": [
